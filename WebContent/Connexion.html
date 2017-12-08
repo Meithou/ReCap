@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CanardTiShop - Connexion</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>.row{margin-right:0px;margin-left:0px}</style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+	
+
+	
+	
+	<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Accueil.jsp"><img src=logo.png height="70"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="Compte.jsp">Mon compte</a>
+                    </li>
+                    <li>
+                        <a href="Panier.jsp">Panier</a>
+                    </li>
+					    <form class="navbar-form navbar-left" action="Search" role="search" method="post">
+							<div class="form-group">
+							<input class="form-control" id="search" name="search" placeholder="Search" type="text">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+					<li class= "droite">
+                        <a href="Connexion.html">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	<div class ="row">
+		<!-- Page Content -->
+	        <div class="col-md-2 menu_gauche ">
+                <p class="lead">Nos Produits</p>
+                <div class="list-group">
+					<a href="/CanardsVivants.jsp" class="list-group-item">Canards Vivants</a>
+                    <a href="/Accessoires.jsp" class="list-group-item">Accessoires</a>
+                    <a href="/AutresCanards.jsp" class="list-group-item">Autres Canards</a>
+                </div>
+            </div>
+
+ 
+    <div class="container">
+    <div class="col-md-2">
+    </div>
+    	<div class="col-md-6">
+      <form class="form-signin" action="LoginServlet" method="post">
+        <h2 class="form-signin-heading">Connectez vous</h2>
+        
+        <label for="inputEmail" class="sr-only">Login</label>
+        <input type="text" id="login" class="form-control" placeholder="Login" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Connection</button>
+      	<div class="form-group">
+          <div class="col-md-12 control" >
+            <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                 Pas encore inscrit ?
+                 <a href="Registration.html">
+                 Enregistre toi !
+                 </a>
+            </div>
+          </div>
+       </div>
+      </form>
+	</div>
+	</div>
+    </div> <!-- /container -->
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; CanardTiShop 2015</p>
+                </div>
+            </div>
+        </footer>
+
+  
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
